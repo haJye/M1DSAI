@@ -25,7 +25,7 @@ train_flow = train_gen.flow_from_directory(
     target_size=(256, 256),
     color_mode="rgb",
     class_mode="categorical",
-    batch_size=32,
+    batch_size=75,
     seed=54,
     subset="training",
 )
@@ -35,7 +35,7 @@ valid_flow = valid_gen.flow_from_directory(
     target_size=(256, 256),
     color_mode="rgb",
     class_mode="categorical",
-    batch_size=32,
+    batch_size=75,
     seed=54,
     subset="validation",
 )
@@ -78,7 +78,7 @@ learningRate_schedule = LearningRateScheduler(learningRate_scheduler)
 history = my_model.fit(
     train_flow,
     validation_data=valid_flow,
-    epochs=20,
+    epochs=30,
     # callbacks=[early_stopping],
     callbacks=[learningRate_schedule]
 )
