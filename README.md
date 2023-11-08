@@ -36,7 +36,7 @@ The code starts by importing the necessary libraries, including TensorFlow, Kera
 
 ## 7. Model Training
 
-- The code trains the model using the `fit` method, providing the training and validation data generators, specifying 20 epochs, and utilizing the learning rate scheduler as a callback.
+- The code trains the model using the `fit` method, providing the training and validation data generators, specifying 30 epochs, and utilizing the learning rate scheduler as a callback.
 - An optional `EarlyStopping` callback is provided but commented out, which can be used to stop training early if the validation loss doesn't improve for a specified number of epochs.
 
 ## 8. Model Evaluation
